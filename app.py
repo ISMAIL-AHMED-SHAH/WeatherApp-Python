@@ -10,8 +10,29 @@ st.set_page_config(
     layout="centered"
 )
 
+# Add gradient background (optional)
+st.markdown("""
+    <style>
+    body {
+        background: linear-gradient(to bottom, #E0F6FF, #FFFFFF);
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Gradient title
+st.markdown("""
+    <h1 style="background: linear-gradient(to right, #4ECDC4, #45B7D1, #96CEB4); 
+               -webkit-background-clip: text; 
+               color: transparent; 
+               text-align: center;">
+                Weather App
+    </h1>
+""", unsafe_allow_html=True)
+
+
+
 # Constants
-API_KEY = "314305dfb21d06325abea643a991f2eb"  # Replace with your OpenWeatherMap API key
+API_KEY = "314305dfb21d06325abea643a991f2eb"
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 # Function to fetch weather data
@@ -29,7 +50,7 @@ def get_weather_data(city):
         return None
 
 # UI Elements
-st.title("🌤️ Real-Time Weather App")
+st.subheader("🌤️ Real-Time Weather App")
 st.write("Get current weather information for any city!")
 
 # City input
@@ -87,4 +108,4 @@ if 'last_refresh' in st.session_state:
 
 # Footer
 st.markdown("---")
-st.markdown("Data provided by OpenWeatherMap")
+st.write("👨‍💻 Created with ❤️ by **Ismail Ahmed Shah**")
