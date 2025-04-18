@@ -21,28 +21,6 @@ The **Real-Time Weather App** is a simple and elegant web application built with
 - **Requests (HTTP Requests Library)** 🔗
 - **Datetime** ⏳
 
-## Installation & Setup 🏗️
-To run the project locally, follow these steps:
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-repo/weather-app.git
-   cd weather-app
-   ```
-2. Install dependencies:
-   ```sh
-   pip install streamlit requests
-   ```
-3. Run the Streamlit app:
-   ```sh
-   streamlit run app.py
-   ```
-
-## API Configuration 🌍
-This app uses the **OpenWeather API** to fetch weather data. Replace `API_KEY` in the script with your own OpenWeather API key:
-```python
-API_KEY = "your_openweather_api_key"
-```
 
 ## Usage 🏙️
 1. Enter the name of the city in the input field.
@@ -54,6 +32,5 @@ API_KEY = "your_openweather_api_key"
 👨‍💻 **Ismail Ahmed Shah**  
 Built with ❤️ and passion for learning!
 
-## License 📜
-This project is licensed under the MIT License.
+
 

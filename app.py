@@ -50,7 +50,7 @@ def get_weather_data(city):
         return None
 
 # UI Elements
-st.subheader("🌤️ Real-Time Weather App")
+st.subheader("🌤️ Real-Time Weather Forecast App")
 st.write("Get current weather information for any city!")
 
 # City input
@@ -108,4 +108,19 @@ if 'last_refresh' in st.session_state:
 
 # Footer
 st.markdown("---")
-st.write("👨‍💻 Created with ❤️ by **Ismail Ahmed Shah**")
+st.write("👨‍💻 Build with ❤️ by **Ismail Ahmed Shah**")
+
+
+
+st.sidebar.image("weather.png", use_container_width=True)
+st.sidebar.markdown("---")
+# 📬 Contact Section
+st.sidebar.markdown("### 📬 Contact")
+st.sidebar.write("📧 [Email Us](mailto:ismailahmedshahpk@gmail.com)")
+st.sidebar.write("🔗 [Connect on LinkedIn](https://www.linkedin.com/in/ismail-ahmed-shah-2455b01ba/)")
+st.sidebar.write("💬 [Chat on WhatsApp](https://wa.me/923322241405)")
+st.sidebar.markdown("---")
+st.sidebar.image("https://cdn-icons-png.flaticon.com/512/3135/3135716.png", width=90, use_container_width=True)
+st.sidebar.markdown("---")
+st.sidebar.markdown("<p style='text-align: center; color: grey;'>Build with ❤️ By Ismail Ahmed Shah</p>", unsafe_allow_html=True)
+st.sidebar.markdown("---")
